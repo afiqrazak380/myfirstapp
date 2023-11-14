@@ -4,7 +4,11 @@ function App(props) {
   return (
     <div>
       <h1>Hello World</h1>
-      <h2> The time now is {currDate.toLocaleTimeString()}.</h2>
+      <h2>
+        {" "}
+        Today is {currDate.toLocaleDateString()} and the time now is{" "}
+        {currDate.toLocaleTimeString()}.
+      </h2>
     </div>
   );
 }
